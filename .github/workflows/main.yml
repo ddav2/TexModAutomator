@@ -17,5 +17,6 @@ jobs:
       run: ./autoit-v3/install/Aut2Exe/Aut2Exe_x64.exe /in TexModAutomator.au3 /out TexModAutomator.exe
     - name: Release the binary
       uses: softprops/action-gh-release@v2
+      if: github.ref_type == 'tag'
       with:
         files: TexModAutomator.exe
