@@ -6,7 +6,7 @@ jobs:
   build:
     name: Build TexModAutomator binary
     runs-on: windows-latest
-    permission:
+    permissions:
       contents: write
 
     steps:
