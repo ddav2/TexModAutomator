@@ -2,7 +2,7 @@
 
 [![Build](https://github.com/ddav2/TexModAutomator/actions/workflows/main.yml/badge.svg)](https://github.com/ddav2/TexModAutomator/actions/workflows/main.yml)
 
-This project is an automation tool for [TexMod](https://www.fileplanet.com/archive/p-16225/Texmod-v0-9b).
+[TexModAutomator](https://github.com/ddav2/TexModAutomator) is an automation tool for [TexMod](https://www.fileplanet.com/archive/p-16225/Texmod-v0-9b).
 It is written in the [AutoIt](https://www.autoitscript.com/site/autoit/) scripting language.
 
 ## What is TexMod?
