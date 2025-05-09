@@ -15,8 +15,15 @@ jobs:
       run: Invoke-WebRequest -Uri https://www.autoitscript.com/files/autoit3/autoit-v3.zip -OutFile autoit-v3.zip
     - name: Extract files from the AutoIt v3 zip
       run: Expand-Archive -Path autoit-v3.zip -DestinationPath autoit-v3
+
     - name: Compile the script
       run: ./autoit-v3/install/Aut2Exe/Aut2Exe_x64.exe /in TexModAutomator.au3 /out TexModAutomator.exe
+
+    - name: Upload the binary as an artifact
+      uses: actions/upload-artifact@v4
+      with:
+        path: TexModAutomator.exe
+        if-no-files-found: error
     - name: Release the binary
       uses: softprops/action-gh-release@v2
       if: github.ref_type == 'tag'
